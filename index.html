@@ -12,9 +12,22 @@
 
 </head>
 <body>
-    <header class="menu">
+    <header class="header">
         <div class="container">
-            <span class="menu-toggle"></span>
+            <input type="checkbox" name="Menu-Toggle" id="menu">
+                <label for="menu">
+                    <span class="container__menu-toggle"></span>
+                </label>
+                <!-- (li[class=menu__list__link]>a[href=#])*6 -->
+                <ul class="menu__list">
+                    <li class="menu__list__title">Categoria</li>
+                    <li class="menu__list__link"><a href="#">PROGRAMAÇÃO</a></li>
+                    <li class="menu__list__link"><a href="#">FRONT-END</a></li>
+                    <li class="menu__list__link"><a href="#">INFRAESTRUTURA</a></li>
+                    <li class="menu__list__link"><a href="#">BUSINESS</a></li>
+                    <li class="menu__list__link"><a href="#"></a>DESIGN & UX</li>
+                </ul>
+                
             <img src="assets/images/Logo.svg" alt="Logo AluraBooks">
         </div>
         <div class="container">
@@ -22,6 +35,7 @@
             <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de Compras"></a>
             <a href="#"><img src="assets/images/Usuario.svg" alt="Meu Usuario"></a>
         </div>
+        
     </header>
     
 </body>
