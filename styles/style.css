@@ -12,9 +12,12 @@
     --cor-text-secondary: white;
     --cor-text-tertiary: #EB9B00;
     --cor-text-quartenary: #002F52;
-
+    --cor-shadown: rgba(0, 0, 0, 0.25);
+    /* --cor-linear: linear-gradient(to right, red , yellow); /* usado para somente com variante background: var()* */
+    --cor-linear: 98deg, var(--cor-bg-tertiary) 35%, var(--cor-bg-quartenary) 165%;
+    
     /* Fonts */
-    --font-Poppins: "Poppins", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
     font-size: 62.5%;
 }
 
@@ -23,7 +26,6 @@
     padding: 0;
     text-decoration: none;
     font-family: var(--font-Poppins);
-
 }
 
 body {
