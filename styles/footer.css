@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--cor-bg-secondary);
+    background-color: var(--cor-bg-2);
     padding: 2.4rem;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 }
 
 a{
-    color: var(--cor-text-primary);
+    color: var(--cor-text-1);
     text-decoration: none;
     font-weight: 600;
 }

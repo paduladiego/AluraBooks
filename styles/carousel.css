@@ -2,8 +2,8 @@
     padding: 2rem 0 0.8rem 0;
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--cor-text-tertiary);
-    background-color: var(--cor-bg-secondary);
+    color: var(--cor-text-3);
+    background-color: var(--cor-bg-2);
     text-align: center;
     text-transform: uppercase;
 
@@ -27,7 +27,7 @@
     margin-top: 2rem;
     /* margin: 2rem 2.4rem 2rem 2.4rem; */
     padding: 1.6rem;
-    background-color: var(--cor-bg-secondary);
+    background-color: var(--cor-bg-2);
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.4rem 0 var(--cor-shadown);
     /* width: 90vw; */
@@ -63,7 +63,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     line-height: normal;
-    color: var(--cor-text-tertiary);
+    color: var(--cor-text-3);
 
 }
 
@@ -71,7 +71,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     line-height: normal;
-    color: var(--cor-text-quartenary);
+    color: var(--cor-text-4);
     margin: 0.8rem 0 0.8rem 0;
 
 }
@@ -99,8 +99,8 @@
 }
 
 .card__btn__link {
-    background-color: var(--cor-btn-primary);
-    color: var(--cor-text-secondary);
+    background-color: var(--cor-btn-1);
+    color: var(--cor-text-2);
     width: 16rem;
     height: 4.8rem;
     align-content: center;
@@ -134,7 +134,7 @@
     }
 
     100% {
-        fill: var(--cor-text-tertiary);
+        fill: var(--cor-text-3);
     }
 }
 
@@ -144,7 +144,7 @@
     }
 
     100% {
-        fill: var(--cor-text-tertiary);
+        fill: var(--cor-text-3);
     }
 }
 
@@ -183,7 +183,7 @@
 .avaliation{
     display: flex;
     cursor: pointer;
-    color: var(--cor-text-tertiary);
+    color: var(--cor-text-3);
     font-size: 1.6rem;
     height: 1.6rem;
 }
@@ -198,4 +198,16 @@
 }
 .star-icon:hover ~ .star-icon::before {
     content: "\2606";
+}
+@media screen and (min-width: 1024px){
+    .carousel__title{
+        font-size: 2.6rem;
+        padding: 5.1rem 0 1.6rem 0;
+    }
+    .swiper {
+        /* margin-left: 10%; */
+        /* margin-right: 10%; */
+        width: 90%;
+        padding-top: 3.2rem;
+   }
 }

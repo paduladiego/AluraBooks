@@ -16,13 +16,13 @@
     </head>
 
     <body>
+<!-- Header -->
         <header class="header">
-            <div class="container">
+            <div class="container no-md">
                 <input type="checkbox" name="Menu-Toggle" id="menu">
                 <label for="menu">
                     <span class="container__menu-toggle"></span>
                 </label>
-                <!-- (li[class=menu__list__link]>a[href=#])*6 -->
                 <ul class="menu__list">
                     <li class="menu__list__title">Categoria</li>
                     <li class="menu__list__link"><a href="#">PROGRAMAÇÃO</a></li>
@@ -31,15 +31,26 @@
                     <li class="menu__list__link"><a href="#">BUSINESS</a></li>
                     <li class="menu__list__link"><a href="#">DESIGN & UX</a></li>
                 </ul>
-
                 <img src="assets/images/Logo.svg" alt="Logo AluraBooks">
             </div>
-            <div class="container">
-                <a href="#"><img src="assets/images/Favoritos.svg" alt="Meu Favoritos"></a>
+            <div class="container2 no-mobile visible-flex-md">
+                <img src="assets/images/Logo.svg" alt="Logo AluraBooks">
+                <h1 class="container__title"><b>Alura</b>Book</h1>
+            </div>
+                <div class="container__nav no-mobile visible-flex-md">
+                    <ul class="nav">
+                        <li class="nav__item"><a class="nav__item__link" href="#">CATEGORIAS</a></li>
+                        <li class="nav__item"><a class="nav__item__link" href="#">FAVORITOS</a></li>
+                        <li class="nav__item"><a class="nav__item__link" href="#">MINHA ESTANTE</a></li>
+                    </ul>
+                </div>
+            <div class="container container3-md">
+                <a class="no-md" href="#"><img src="assets/images/Favoritos.svg" alt="Meu Favoritos"></a>
                 <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de Compras"></a>
                 <a href="#"><img src="assets/images/Usuario.svg" alt="Meu Usuario"></a>
             </div>
         </header>
+<!-- Banner -->
         <section class="banner">
             <h2 class="banner__title">Já sabe por onde começar?</h2>
             <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
@@ -70,8 +81,8 @@
                 </div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev visible-md"></div>
+                <div class="swiper-button-next visible-md"></div>
             </div>
             <div class="card-align">
                 <!-- 1º linha -->
@@ -195,7 +206,6 @@
             </div>
 
         </section>
-
 <!-- Topicos -->
         <section class="news">
             <div class="topics">
@@ -219,12 +229,13 @@
             </div>
         </section>
         <hr>
+<!-- Footer -->
         <footer class="footer">
             <h2 class="footer__title">Grupo Alura</h2>
             <p class="footer__text">Desenvolvido por <a href="mailto:paduladiego@gmail.com">Padula</a></p>
         
         </footer>
-
+<!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
