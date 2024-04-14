@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="assets/images/Logo.svg" /><link>
-    <title>AluraBooks</title>
 
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <input type="checkbox" name="Menu-Toggle" id="menu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="assets/images/Logo.svg" />
+        <link>
+        <title>AluraBooks</title>
+
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <input type="checkbox" name="Menu-Toggle" id="menu">
                 <label for="menu">
                     <span class="container__menu-toggle"></span>
                 </label>
@@ -27,22 +31,213 @@
                     <li class="menu__list__link"><a href="#">BUSINESS</a></li>
                     <li class="menu__list__link"><a href="#">DESIGN & UX</a></li>
                 </ul>
-                
-            <img src="assets/images/Logo.svg" alt="Logo AluraBooks">
-        </div>
-        <div class="container">
-            <a href="#"><img src="assets/images/Favoritos.svg" alt="Meu Favoritos"></a>
-            <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de Compras"></a>
-            <a href="#"><img src="assets/images/Usuario.svg" alt="Meu Usuario"></a>
-        </div>
-    </header>
-    <section class="banner">
-        <h2 class="banner__title">Já sabe por onde começar?</h2>
-        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner__search" id="banner__search" name="banner__search" placeholder="Qual será sua próxima leitura?">
 
-    </section>
-    
-</body>
+                <img src="assets/images/Logo.svg" alt="Logo AluraBooks">
+            </div>
+            <div class="container">
+                <a href="#"><img src="assets/images/Favoritos.svg" alt="Meu Favoritos"></a>
+                <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de Compras"></a>
+                <a href="#"><img src="assets/images/Usuario.svg" alt="Meu Usuario"></a>
+            </div>
+        </header>
+        <section class="banner">
+            <h2 class="banner__title">Já sabe por onde começar?</h2>
+            <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__search" id="banner__search" name="banner__search"
+                placeholder="Qual será sua próxima leitura?">
+        </section>
+
+        <section class="carousel">
+            <h2 class="carousel__title">ÚLTIMOS LANÇAMENTOS</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/images/ApacheKafka.svg"
+                            alt="Livro sobre apache kafka e spring boot"></div>
+                    <div class="swiper-slide"><img src="assets/images/Lideranca.svg"
+                            alt="Livro sobre lideran;a em design"></div>
+                    <div class="swiper-slide"><img src="assets/images/Javascript.svg"
+                            alt="Livro sobre javascript assertivo"></div>
+                    <div class="swiper-slide"><img src="assets/images/Guia Front-end.svg" alt="Livro guia front-end">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/images/Acessibilidade.svg"
+                            alt="Livro sobre Acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card-align">
+                <!-- 1º linha -->
+                <div class="card">
+                    <!-- 1º coluna -->
+                    <div class="card__container">
+                        <div class="card__container__info">
+                            <h3 class="card__container__info__title">Talvez você também se interesse por...</h3>
+                            <h2 class="card__container__info__title-book">Angular 11 e Firebase</h2>
+                            <p class="card__container__info__text">Construindo uma aplicação integrada com a plataforma
+                                do
+                                Google.</p>
+                        </div>
+                        <!-- 2º coluna     -->
+                        <img src="assets/images/Angular.svg" class="card__container__img"
+                            alt="livro sobre angular e firebase">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__btn">
+                        <!-- 1ª coluna -->
+                        <ul class="card__btn__list">
+                            <li class="card__btn__list_item">
+                                <input type="checkbox" id="ckb-like">
+                                <label class="lb-like" for="ckb-like">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.5631 26.0582L16.6682 25.9527C19.754 23.1454 22.4188 20.7211 24.3003 18.5122C26.1734 16.3133 27.5 14.0721 27.5 11.6154C27.5 8.15625 24.8663 5.5 21.4063 5.5C19.1681 5.5 16.9632 6.72274 15.8065 8.61209H15.2019C14.0384 6.72577 11.8359 5.5 9.59375 5.5C6.13369 5.5 3.5 8.15625 3.5 11.6154C3.5 14.0721 4.82659 16.3133 6.69967 18.5122C8.5812 20.7211 11.246 23.1454 14.3319 25.9527L14.4369 26.0582L15.5 27.1263L16.5631 26.0582Z"
+                                            stroke="#002F52" stroke-width="3" />
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="card__btn__list_item">
+                                <input type="checkbox" id="ckb-cart">
+                                <label class="lb-cart" for="ckb-cart">
+                                    <img src="assets/images/Compras.svg" alt="adicionar carrinho">
+                                </label>
+                            </li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="card__btn__link" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="carousel">
+            <h2 class="carousel__title">MAIS VENDIDOS</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/images/ApacheKafka.svg"
+                            alt="Livro sobre apache kafka e spring boot"></div>
+                    <div class="swiper-slide"><img src="assets/images/Lideranca.svg"
+                            alt="Livro sobre lideran;a em design"></div>
+                    <div class="swiper-slide"><img src="assets/images/Javascript.svg"
+                            alt="Livro sobre javascript assertivo"></div>
+                    <div class="swiper-slide"><img src="assets/images/Guia Front-end.svg" alt="Livro guia front-end">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/images/Acessibilidade.svg"
+                            alt="Livro sobre Acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card-align">
+                <!-- 1º linha -->
+                <div class="card">
+                    <!-- 1º coluna -->
+                    <div class="card__container">   
+                        <div class="card__container__info">
+                            <ul class="avaliation">
+                                <li class="star-icon active" data-avaliation="1"></li>
+                                <li class="star-icon" data-avaliation="2"></li>   
+                                <li class="star-icon" data-avaliation="3"></li>
+                                <li class="star-icon" data-avaliation="4"></li>
+                                <li class="star-icon" data-avaliation="5"></li>
+                            </ul>
+                            <h3 class="card__container__info__title">Autora do Mês</h3>
+                            <h2 class="card__container__info__title-book">Juliana Agarikov</h2>
+                            <p class="card__container__info__text">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                        </div>
+                        <!-- 2º coluna     -->
+                        <img src="assets/images/Escritora.svg" class="card__container__img"
+                            alt="livro sobre angular e firebase">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__btn">
+                        <!-- 1ª coluna -->
+                        <ul class="card__btn__list">
+                            <li class="card__btn__list_item">
+                                <input type="checkbox" id="ckb-like-writer">
+                                <label class="lb-like-writer" for="ckb-like-writer">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.5631 26.0582L16.6682 25.9527C19.754 23.1454 22.4188 20.7211 24.3003 18.5122C26.1734 16.3133 27.5 14.0721 27.5 11.6154C27.5 8.15625 24.8663 5.5 21.4063 5.5C19.1681 5.5 16.9632 6.72274 15.8065 8.61209H15.2019C14.0384 6.72577 11.8359 5.5 9.59375 5.5C6.13369 5.5 3.5 8.15625 3.5 11.6154C3.5 14.0721 4.82659 16.3133 6.69967 18.5122C8.5812 20.7211 11.246 23.1454 14.3319 25.9527L14.4369 26.0582L15.5 27.1263L16.5631 26.0582Z"
+                                            stroke="#002F52" stroke-width="3" />
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="card__btn__list_item">
+                                <input type="checkbox" id="ckb-cart-writer">
+                                <label class="lb-cart-writer" for="ckb-cart-writer">
+                                    <img src="assets/images/Compras.svg" alt="adicionar carrinho">
+                                </label>
+                            </li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="card__btn__link" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // speed: 400,
+                loop: true,
+                spaceBetween: 20,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script>
+        <script>
+            const checkbox = document.getElementById('ckb-cart');
+            const checkbox2 = document.getElementById('ckb-cart-writer');
+            const cartImage = document.querySelector('.lb-cart img');
+            const cartImage2 = document.querySelector('.lb-cart-writer img');
+
+            cartImage.addEventListener('animationend', function () {
+                checkbox.checked = false; // Desmarca o checkbox ao final da animação
+            });
+            cartImage2.addEventListener('animationend', function () {
+                checkbox2.checked = false; // Desmarca o checkbox ao final da animação
+            });
+            // animação de sacola e like
+
+            // animação estrelas
+            var stars = document.querySelectorAll('.star-icon');
+
+            document.addEventListener('click', function (e) {
+                var classStar = e.target.classList;
+                if (!classStar.contains('active')) {
+                    stars.forEach(function (star) {
+                        star.classList.remove('active');
+                    });
+                    classStar.add('active');
+                    console.log(e.target.getAttribute('data-avaliation'));
+                }
+            });
+        </script>
+    </body>
 
 </html>

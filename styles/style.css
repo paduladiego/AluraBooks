@@ -2,6 +2,7 @@
 
 @import "header.css";
 @import "banner.css";
+@import "carousel.css";
 
 :root {
     /* Colors */
@@ -16,7 +17,8 @@
     --cor-shadown: rgba(0, 0, 0, 0.25);
     /* --cor-linear: linear-gradient(to right, red , yellow); /* usado para somente com variante background: var()* */
     --cor-linear: 98deg, var(--cor-bg-tertiary) 35%, var(--cor-bg-quartenary) 165%;
-    
+    --cor-linear2: linear-gradient(var(--cor-bg-tertiary) 35%, var(--cor-bg-quartenary) 165%);
+        
     /* Fonts */
     --font-poppins: "Poppins", sans-serif;
     font-size: 62.5%;
@@ -26,12 +28,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: var(--font-Poppins);
 }
 
 body {
+    font-family: var(--font-poppins);
     /* width: 100vw; */
     background-color: var(--cor-bg-primary);
     /* font-size: 1.6rem; */
+    
 
 }
