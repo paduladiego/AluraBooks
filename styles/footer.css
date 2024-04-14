@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--cor-bg-secondary);
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__title {
+    font-size: 1.6rem;
+}
+.footer__text {
+    font-size: 0.9rem;
+    font-style: italic;
+    
+}
+
+a{
+    color: var(--cor-text-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
