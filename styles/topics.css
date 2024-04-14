@@ -1,0 +1,74 @@
+.news{
+    /* background-color: var(--cor-btn-primary); */
+    background-color: var(--cor-bg-secondary);
+    padding-top: 2rem;
+
+    
+}
+.topics{
+    margin-top: 2rem;
+    text-align: center;
+    background-image: linear-gradient(var(--cor-linear));
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.topics__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+}
+.topics__title{
+    color: var(--cor-text-secondary);
+    font-size: 1.6rem;
+    font-weight: lighter;
+    padding: 2.4rem 0 3.2rem 0;
+}
+.topics__list__item{
+    background-color: var(--cor-btn-primary);
+    padding: 1.6rem 2.4rem;
+}
+.topics__list__link{
+    color: var(--cor-text-secondary);
+    
+}   
+
+.newslatter{
+    /* background-color: tomato; */
+    color: var(--cor-linear2);
+    padding: 2.4rem 5vw 3rem 5vw;
+}
+.newsl__title{
+    /* margin-top: 2.4rem;   */
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.newsl__subtitle{
+    margin: 0.8rem 0 2.4rem 0;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 1.6rem;
+}
+.newsl__email{
+    border: 0.1rem solid;
+    border-color: var(--cor-linear2);
+    border-radius: 2.4rem;
+    width: 90vw;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.4rem;
+    background-color: transparent;
+}
+.newsl__email::placeholder{
+    font-family: var(--font-poppins);
+    color: var(--cor-linear2);
+    font-size: 1.6rem;
+    font-weight: 400;
+    content: "\2709";
+    /* background: url("../assets/images/Lupa.svg") no-repeat; */
+    background-position: 6.6rem;
+    padding-left: 2rem;
+
+}
+.newsl__email::placeholder ~ .newsl__email::placeholder::before{
+    content: "\2709";
+}

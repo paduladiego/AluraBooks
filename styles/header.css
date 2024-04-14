@@ -8,7 +8,7 @@
 }
 
 .header {
-    background-color: var(--cor-bg-secundary);
+    background-color: var(--cor-bg-secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
     padding: 0 0 0 2.4rem;
     font-size: 1.6rem;
     box-shadow: .4rem .4rem .8rem var(--cor-shadown);
-    background-color: var(--cor-bg-secundary);
+    background-color: var(--cor-bg-secondary);
     width: 70vw;
 }
 

@@ -3,7 +3,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--cor-text-tertiary);
-    background-color: var(--cor-bg-secundary);
+    background-color: var(--cor-bg-secondary);
     text-align: center;
     text-transform: uppercase;
 
@@ -27,7 +27,7 @@
     margin-top: 2rem;
     /* margin: 2rem 2.4rem 2rem 2.4rem; */
     padding: 1.6rem;
-    background-color: var(--cor-bg-secundary);
+    background-color: var(--cor-bg-secondary);
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.4rem 0 var(--cor-shadown);
     /* width: 90vw; */
@@ -99,7 +99,7 @@
 }
 
 .card__btn__link {
-    background-color: var(--cor-text-tertiary);
+    background-color: var(--cor-btn-primary);
     color: var(--cor-text-secondary);
     width: 16rem;
     height: 4.8rem;

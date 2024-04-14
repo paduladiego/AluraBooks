@@ -3,17 +3,19 @@
 @import "header.css";
 @import "banner.css";
 @import "carousel.css";
+@import "topics.css";
 
 :root {
     /* Colors */
     --cor-bg-primary: #C4C4C4;
-    --cor-bg-secundary: #FFFFFF;
+    --cor-bg-secondary: #FFFFFF;
     --cor-bg-tertiary: #002F52;
     --cor-bg-quartenary: #326589;
     --cor-text-primary: black;
     --cor-text-secondary: white;
     --cor-text-tertiary: #EB9B00;
     --cor-text-quartenary: #002F52;
+    --cor-btn-primary: #EB9B00;
     --cor-shadown: rgba(0, 0, 0, 0.25);
     /* --cor-linear: linear-gradient(to right, red , yellow); /* usado para somente com variante background: var()* */
     --cor-linear: 98deg, var(--cor-bg-tertiary) 35%, var(--cor-bg-quartenary) 165%;
