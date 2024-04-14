@@ -51,6 +51,7 @@
     box-shadow: .4rem .4rem .8rem var(--cor-shadown);
     background-color: var(--cor-bg-2);
     width: 70vw;
+    z-index: 10;
 }
 
 #menu:checked~.menu__list {
@@ -84,6 +85,8 @@
         /* width: 300rem; */
         /* gap: 6rem; */
         padding: 0 8rem 0 8rem;
+        height: 8rem;
+        z-index: 20;
     }
     .container3-md{
         width: 13rem;
@@ -92,7 +95,7 @@
     .container__title {
         font-family: var(--font-josefin);
         font-size: 3rem;
-        padding-top: 2.4rem;
+        padding-top: 1rem;
         padding-left: 1rem;
     }
     
@@ -102,9 +105,41 @@
     .nav{
         display: flex;
     }
+    .nav__list__link:hover a{
+        color: white;
+    }
+    .nav__list__link:hover{
+        background: var(--cor-linear2);
+    }
     .nav__item{
         font-size: 1.6rem;
-        padding: 1rem 3.2rem 1rem 1rem;
+        font-weight: 400;
+        padding: 2rem 3.2rem 1rem 1rem;
     }
-    
+    .nav__item__link{
+        font-size: 1.6rem;
+        font-weight: 400;
+    } 
+    #nav__ckb-menu{
+        display: none;
+    }
+    #nav__ckb-menu:checked ~ .nav__list{
+        display: block;
+    }
+    .nav__list {
+        display: none;
+        position: absolute;
+        top: 8rem;
+        box-shadow: .4rem .4rem .8rem var(--cor-shadown);
+        width: 18rem;
+        background-color: var(--cor-bg-2);
+    }
+    .nav__list__link {
+        padding: 1.6rem 0 1.6rem 2.4rem;
+    }
+    .nav__list__link a{
+        font-weight: 400;
+        font-size: 1.6rem;
+
+    }
 }
