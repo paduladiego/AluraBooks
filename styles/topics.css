@@ -71,3 +71,38 @@
     padding-left: 2rem;
 
 }
+
+@media screen and (min-width: 1024px){
+    .topics__title{
+        font-size: 2.4rem;
+        padding: 3.2rem 0 4rem 0;
+    }
+    .topics__list{
+        gap: 2.4rem;
+        padding: 0 14rem 0 14rem;
+    }
+    .topics__list__item{
+        padding: 2.4rem 3.2rem;
+    }
+    .newslatter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3rem 14rem 5.3rem 14rem;
+
+    }
+    .newsl__title{
+        width: 90%;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .newsl__email{
+        width: 50%;
+        align-content: center;
+    }
+    .newsl__subtitle{
+        width: 90%;
+        margin-top: 2rem;
+    }
+}

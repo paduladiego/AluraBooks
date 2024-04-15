@@ -30,8 +30,8 @@
     background-color: var(--cor-bg-2);
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.4rem 0 var(--cor-shadown);
-    /* width: 90vw; */
-    width: 38rem;
+    width: 88vw;
+    /* width: 38rem; */
     height: 29.5rem;
     align-content: center;
 
@@ -207,7 +207,7 @@
     .swiper {
         /* margin-left: 10%; */
         /* margin-right: 10%; */
-        width: 70%;
+        width: 80vw;
         padding-top: 3.2rem;
    }
 
@@ -219,11 +219,31 @@
     width: 12px;
     height: 12px;
    }
+   /* VISITAR NOVAMENTE E AJUSTAR */
+   .carousel{
+        --swiper-navigation-size: 2rem;
+        --swiper-navigation-sides-offset: 0;
+        --swiper-navigation-color: #fff;
+        
+   }
    .swiper-button-prev,
    .swiper-button-next {
         display: block;
         top: 65%;
-        /* background: var(--cor-linear2); */
+        background: var(--cor-linear2);
+        padding: 1.5em 1.5em;
+        border-radius: 50%;
    }
-
+   /* VISITAR NOVAMENTE E AJUSTAR */
+   .card{
+    margin-top: 6rem;
+    margin-bottom: 4.8rem;
+    width: 60vw;
+   }
+   .card__container, .card__btn {
+    justify-content: space-around;
+   }
+   .card__container__info, .card__btn__list {
+        width: 60%;
+    }
 }
