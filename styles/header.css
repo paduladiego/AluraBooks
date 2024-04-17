@@ -111,6 +111,7 @@
     .nav__list__link:hover{
         background: var(--cor-linear2);
     }
+    /* .nav__item:active{        background: var(--cor-linear2);        color: var(--cor-text-2);        animation-fill-mode: forwards;     } */
     .nav__item{
         font-size: 1.6rem;
         font-weight: 400;
