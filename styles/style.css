@@ -60,6 +60,29 @@
     }
     
 }
+@media screen and (min-width: 1728px) {
+    .large{
+        display: block;
+    }
+    .large-flex{
+        display: flex;
+    }
+    
+    .nav a, .nav__item{
+        font-size: 2rem;
+    }
+    .nav {
+        padding-left: 5rem;
+    }
+
+    .container3-md{
+        width: 60rem;
+    }
+    .container3-lg{
+        font-size: 2rem;
+        padding-right: 2rem;
+    }
+}
  
 body {
     font-family: var(--font-poppins);

@@ -16,6 +16,9 @@
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
+    
+
+
 }
 
 .swiper-pagination {
@@ -202,9 +205,8 @@
         padding: 5.1rem 0 1.6rem 0;
     }
     .swiper {
-        /* margin-left: 10%; */
-        /* margin-right: 10%; */
-        width: 80vw;
+        width: 70vw;
+        /* margin: 0 -15rem 0 15rem; */
         padding-top: 3.2rem;
    }
 
@@ -217,19 +219,23 @@
     height: 12px;
    }
    /* VISITAR NOVAMENTE E AJUSTAR */
-   .carousel{
-        --swiper-navigation-size: 2rem;
-        --swiper-navigation-sides-offset: 0;
-        --swiper-navigation-color: #fff;
-        
-   }
+   .swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+    }
    .swiper-button-prev,
    .swiper-button-next {
-        display: block;
-        top: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60%;
+        width: 5rem;
+        height: 5rem;
         background: var(--cor-linear2);
-        padding: 1.5em 1.5em;
-        border-radius: 50%;
+        color: var(--cor-text-2);
+        /* margin: 0 -1.5rem; */
+        border-radius: 100%;
+        font-size: 2.4rem;
    }
    /* VISITAR NOVAMENTE E AJUSTAR */
    .card{
@@ -243,4 +249,43 @@
    .card__container__info, .card__btn__list {
         width: 60%;
     }
+}
+
+@media screen and (min-width: 1728px){
+    .carousel__title{
+        font-size: 3.6rem;
+        padding-top: 6rem;
+    }
+    .carousel-lg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        height: 50rem;
+        margin: 7.4rem;
+    }
+    .swiper{
+        width: 75rem;
+        margin-right: 2rem;
+        margin-right: -2rem;
+        padding-bottom: 11rem;
+    }
+    .swiper-pagination {
+        padding: 2.8rem;
+        margin: 0;
+    }
+    swiper-slide{
+        height: 55rem;   
+     }
+        .card{
+            width: 59rem;
+            margin: 0 2rem 11rem -2rem;
+        }
+        .card-align{
+            width: 50%;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            top:50%;
+        }
 }

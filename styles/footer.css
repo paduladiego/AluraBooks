@@ -56,3 +56,28 @@ a{
         padding: 1.4rem 2.4rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .foot__list{
+        border-left: 0.2rem solid var(--cor-footer-1);
+        padding-left: 2rem;
+        height: 39.5    rem;
+    }
+    .footer{
+        justify-content: flex-end;
+        gap: 15rem;
+        padding-right: 25rem;
+        padding-left: 21rem;
+    }
+    .footer__title{
+        padding: 5.6rem 0 0 0;
+        width: 15rem;
+    }
+    .footer__text{
+        font-size: 1.2rem;
+        padding: 1renm  10rem 4rem 0;
+        }
+    .container__footer_by{
+        background-color: var(--cor-bg-2);
+    }
+}

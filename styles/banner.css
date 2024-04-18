@@ -73,5 +73,9 @@
         background-position: calc(50% - 14rem);
 
     }
-
+}
+@media screen and (min-width: 1728px){
+    .banner__search{
+        width: 60rem;
+    }
 }

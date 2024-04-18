@@ -106,3 +106,24 @@
         margin-top: 2rem;
     }
 }
+@media screen and (min-width: 1728px) {
+    .topics__title{
+        padding-top: 6.5rem;
+    }
+    .topics__list{
+        padding: 0 40rem 7.5rem 40rem;
+    }
+    .topics__list__item{
+        font-size: 2.4rem;
+    }
+    .newsl__email{
+        width: 35rem;
+    }
+    .newsl__email::placeholder{
+        font-size: 1.6rem;
+    }
+    .newslatter{
+        justify-content: center;
+        padding: 6.4rem 0 6.4rem 0;
+    }
+}
