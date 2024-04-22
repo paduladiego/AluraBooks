@@ -33,7 +33,7 @@
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.4rem 0 var(--cor-shadown);
     width: 88vw;
-    height: 29.5rem;
+    min-height: 29.5rem;
     align-content: center;
 
 }
