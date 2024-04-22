@@ -99,12 +99,13 @@
 }
 
 .card__btn__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor-btn-1);
     color: var(--cor-text-2);
     width: 16rem;
     height: 4.8rem;
-    align-content: center;
-    text-align: center;
     font-size: 1.6rem;
 
 }
